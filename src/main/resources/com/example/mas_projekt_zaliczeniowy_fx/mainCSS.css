@@ -1,0 +1,53 @@
+.root {
+    -fx-font-size: 16px;
+    -fx-background-color: #31bde0;
+    -fx-font-family : "Lato Regular";
+}
+
+.text-field {
+    -fx-font-family : "Lato Regular";
+}
+
+.text-area {
+    -fx-font-family : "Lato Regular";
+    -fx-background-color: #31bde0;
+}
+
+BorderPane {
+    -fx-background-color: #31bde0;
+}
+
+.split-pane {
+    -fx-background-color: #31bde0;
+}
+
+.split-pane *.split-pane-divider {
+    -fx-padding: 0 1 0 1;
+    -fx-background-color: transparent;
+}
+
+.myTitledPaneClass {
+    -fx-background-color: #31bde0;
+}
+
+.reservationMainBorderPane {
+    -fx-background-color: #31bde0;
+}
+
+.custom-button {
+    -fx-alignment: CENTER;
+    -fx-font-family : "Lato Regular";
+    -fx-font-size: 20px;
+    -fx-text-fill: #fafafa;
+    -fx-background-color: #434dab;
+    -fx-border-radius: 20;
+    -fx-border-color: #0e1324;
+    -fx-background-radius: 20;
+    -fx-padding: 5;
+    -fx-effect: dropshadow( one-pass-box , #0a0d18, 1 , 0.0 , 1 , 1 );
+}
+
+.error {
+    -fx-border-color: #990808;
+    -fx-border-width: 2px ;
+}

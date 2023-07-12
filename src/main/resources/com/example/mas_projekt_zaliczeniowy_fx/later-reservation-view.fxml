@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1200.0" stylesheets="@mainCSS.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mas_projekt_zaliczeniowy_fx.controllers.LaterReservationViewController">
+    <top>
+        <BorderPane prefHeight="150.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
+            <center>
+                <Label alignment="CENTER" focusTraversable="false" text="Rezerwacja odłożona na późniejszy termin." textAlignment="CENTER" textFill="#333333" BorderPane.alignment="CENTER">
+                    <font>
+                        <Font name="Lato Regular" size="48.0" />
+                    </font>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </Label>
+            </center>
+        </BorderPane>
+    </top>
+   <center>
+       <Button fx:id="buttonBackToMenu" mnemonicParsing="false" prefHeight="40.0" prefWidth="183.0" styleClass="custom-button" text="Wróć do menu" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

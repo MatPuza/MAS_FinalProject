@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1200.0" stylesheets="@mainCSS.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mas_projekt_zaliczeniowy_fx.controllers.AttractionPickController">
+    <top>
+        <BorderPane prefHeight="150.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
+            <center>
+                <Label alignment="CENTER" focusTraversable="false" text="Dostępne atrakcje" textAlignment="CENTER" textFill="#333333" BorderPane.alignment="CENTER">
+                    <font>
+                        <Font name="Lato Regular" size="48.0" />
+                    </font>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </Label>
+            </center>
+        </BorderPane>
+    </top>
+   <center>
+      <ListView fx:id="attractionsList" fixedCellSize="80.0" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+   <left>
+      <Region prefHeight="600.0" prefWidth="70.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <Region prefHeight="418.0" prefWidth="70.0" BorderPane.alignment="CENTER" />
+   </right>
+   <bottom>
+      <AnchorPane prefHeight="182.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
+         <children>
+             <Button fx:id="buttonNext" layoutX="1031.0" layoutY="53.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" styleClass="custom-button" text="Dalej" />
+             <Button fx:id="buttonCancel" layoutX="891.0" layoutY="53.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" styleClass="custom-button" text="Anuluj" />
+            <TextField fx:id="amountOfPplField" layoutX="70.0" layoutY="50.0" prefHeight="30.0" prefWidth="475.0" promptText="Podaj ilość osób:" style="-fx-font-size: 24;">
+               <font>
+                  <Font name="Lato Regular" size="24.0" />
+               </font>
+            </TextField>
+            <Label fx:id="errorAmountLabel" layoutX="70.0" layoutY="97.0" prefHeight="20.0" prefWidth="475.0" textFill="#ae0000">
+               <font>
+                  <Font name="Lato Regular" size="12.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </bottom>
+</BorderPane>
